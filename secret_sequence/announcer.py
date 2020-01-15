@@ -16,11 +16,11 @@ for letter in secret:
             continue
         elif incoming == letter:
             display.show(Image.YES)
-            sleep(1000)
+            sleep(500)
             break
         else:
             display.show(Image.NO)
-            sleep(1000)
+            sleep(500)
 
 radio.send("complete")
 display.show(Image.HEART)
