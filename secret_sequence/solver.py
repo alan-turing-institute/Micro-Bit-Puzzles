@@ -1,8 +1,6 @@
 from microbit import *
 import radio
 
-secret = "ABBABABA"
-
 radio.on()
 
 while True:

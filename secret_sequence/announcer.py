@@ -1,9 +1,12 @@
 from microbit import *
 import radio
+import random
 
-secret = "ABBABABA"
+secret = "".join([random.choice("AB") for i in range(10)])
 
 radio.on()
+
+radio.send(secret)
 
 for letter in secret:
     while True:
