@@ -22,4 +22,5 @@ for letter in secret:
             display.show(Image.NO)
             sleep(1000)
 
+radio.send("complete")
 display.show(Image.HEART)

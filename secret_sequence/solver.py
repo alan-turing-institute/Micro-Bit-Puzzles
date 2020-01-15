@@ -8,3 +8,9 @@ while True:
         radio.send("A")
     elif button_b.was_pressed():
         radio.send("B")
+
+    incoming = radio.receive()
+    if incoming == "complete":
+        break
+
+display.show(Image.HEART)
